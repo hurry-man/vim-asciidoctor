@@ -119,7 +119,8 @@ onoremap <silent><buffer>al :<C-u>call asciidoctor#delimited_block_textobj(v:fal
 xnoremap <silent><buffer>il :<C-u>call asciidoctor#delimited_block_textobj(v:true)<CR>
 xnoremap <silent><buffer>al :<C-u>call asciidoctor#delimited_block_textobj(v:false)<CR>
 
-nnoremap <silent><buffer> gx :<c-u>call asciidoctor#open_url()<CR>
+" `gx` collides with my keymap
+" nnoremap <silent><buffer> gx :<c-u>call asciidoctor#open_url()<CR>
 nnoremap <silent><buffer> gf :<c-u>call asciidoctor#open_url("edit")<CR>
 
 "" Useful with
